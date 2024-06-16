@@ -15,4 +15,4 @@ git clone --depth 1 https://github.com/Ausaci/luci-app-nat6-helper.git
 
 # 下载UA2F和OpenClash插件
 git clone https://github.com/Zxilly/UA2F.git package/UA2F
-svn checkout https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
+git clone --depth 1 https://github.com/vernesong/OpenClash.git package/luci-app-openclash
