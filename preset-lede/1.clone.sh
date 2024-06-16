@@ -12,3 +12,7 @@ mkdir $SUPPLY_DIR && cd $SUPPLY_DIR
 git clone --depth 1 https://github.com/kenzok8/openwrt-packages.git
 git clone --depth 1 https://github.com/kenzok8/small.git
 git clone --depth 1 https://github.com/Ausaci/luci-app-nat6-helper.git
+
+# 下载UA2F和OpenClash插件
+git clone https://github.com/Zxilly/UA2F.git package/UA2F
+svn checkout https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
