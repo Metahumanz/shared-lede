@@ -26,6 +26,12 @@ cp $(dirname $0)/uci-scripts/* files/etc/uci-defaults/
 # switch ramips kernel to 5.10
 sed -i '/KERNEL_PATCHVER/cKERNEL_PATCHVER:=5.10' target/linux/ramips/Makefile
 
+# 设置UA2F
+uci set ua2f.enabled.enabled=1
+uci commit ua2f
+service ua2f start
+
+
 # switch ramips kernel to 5.15
 #sed -i '/KERNEL_PATCHVER/cKERNEL_PATCHVER:=5.15' target/linux/ramips/Makefile
 
